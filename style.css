@@ -1,0 +1,88 @@
+:root {
+  --primary-color: #0A2540;
+  --secondary-color: #646cff;
+  --text-color: #213547;
+  --background-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.5;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.nav-links a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.get-started {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(10, 37, 64, 0.7), rgba(10, 37, 64, 0.7)),
+              url('img/cachorroMain.png') center/cover;
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+  color: white;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.shop-now {
+  background-color: white;
+  color: var(--primary-color);
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
