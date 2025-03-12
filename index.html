@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paws n' Play - Pet Shop</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -27,6 +27,49 @@
       </div>
     </header>
 
-    <script type="module" src="/main.js"></script>
+    <section id="shop" class="shop-section">
+      <div class="shop-header">
+        <div class="shop-title">
+          <i class="fas fa-store"></i>
+          <h2>Shop</h2>
+        </div>
+      </div>
+      
+      <div class="shop-container">
+        <div class="products-header">
+          <h3>Featured Products</h3>
+          <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search">
+          </div>
+        </div>
+
+        <div class="filters">
+          <button class="active">Random</button>
+          <button>Cat</button>
+          <button>Dogs</button>
+          <button>Fish</button>
+          <button>Birds</button>
+        </div>
+
+        <div class="products-grid">
+          <div class="product-card">
+            <img src="img/racaoGato.png" alt="Cat Food Package">
+          </div>
+          <div class="product-card">
+            <img src="img/racaogato2.png" alt="Dog Food Package">
+          </div>
+          <div class="product-card">
+            <img src="img/racaoCachorro.png" alt="Pet Food Package">
+          </div>
+        </div>
+
+        <div class="view-more">
+          <a href="#" class="view-more-link">View More >>></a>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="main.js"></script>
   </body>
 </html>
