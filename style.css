@@ -791,6 +791,18 @@ section {
   margin-bottom: 3rem;
 }
 
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.newsletter-text {
+  flex: 1;
+  max-width: 50%;
+}
+
 .newsletter h4 {
   font-size: 1.125rem;
   font-weight: 600;
@@ -800,12 +812,13 @@ section {
 .newsletter p {
   color: #94a3b8;
   font-size: 0.875rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .newsletter-form {
   display: flex;
   gap: 0.5rem;
+  flex: 1;
 }
 
 .newsletter-form input {

@@ -94,8 +94,7 @@ if (contactForm) {
     const email = contactForm.querySelector('#email');
     const message = contactForm.querySelector('#message');
     const privacyCheckbox = contactForm.querySelector('#privacy');
-    
-    // Simple validation
+
     if (!firstName.value.trim()) isValid = false;
     if (!lastName.value.trim()) isValid = false;
     if (!email.value.trim()) isValid = false;
@@ -103,7 +102,6 @@ if (contactForm) {
     if (!privacyCheckbox.checked) isValid = false;
     
     if (isValid) {
-      // Form submission logic would go here
       contactForm.reset();
       alert('Message sent successfully!');
     } else {
@@ -128,29 +126,6 @@ if (newsletterForm) {
   });
 }
 
-// Play button hover effect
-const playButton = document.querySelector('.play-button');
-if (playButton) {
-  playButton.addEventListener('mouseenter', () => {
-    playButton.style.transform = 'translate(-50%, -50%) scale(1.1)';
-  });
-  
-  playButton.addEventListener('mouseleave', () => {
-    playButton.style.transform = 'translate(-50%, -50%) scale(1)';
-  });
-  
-  playButton.addEventListener('click', () => {
-    alert('Video playback would start here.');
-  });
-}
-
-// Live chat button
-const chatButton = document.querySelector('.start-chat');
-if (chatButton) {
-  chatButton.addEventListener('click', () => {
-    alert('Live chat would open here.');
-  });
-}
 
 // Add to cart functionality
 document.querySelectorAll('.add-to-cart').forEach(button => {
