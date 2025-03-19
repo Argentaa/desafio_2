@@ -126,7 +126,6 @@ if (newsletterForm) {
   });
 }
 
-
 // Add to cart functionality
 document.querySelectorAll('.add-to-cart').forEach(button => {
   button.addEventListener('click', (e) => {
@@ -139,3 +138,29 @@ document.querySelectorAll('.add-to-cart').forEach(button => {
     alert(`Added ${quantity} ${productTitle}(s) to your cart!`);
   });
 });
+
+// Hamburguer menu
+const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+const body = document.body;
+
+if (mobileMenuToggle) {
+  mobileMenuToggle.addEventListener('click', () => {
+    body.classList.toggle('mobile-menu-open');
+  });
+  
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      body.classList.remove('mobile-menu-open');
+    });
+  });
+  
+  document.addEventListener('click', (e) => {
+    if (
+      body.classList.contains('mobile-menu-open') && 
+      !e.target.closest('.nav-links') && 
+      !e.target.closest('.mobile-menu-toggle')
+    ) {
+      body.classList.remove('mobile-menu-open');
+    }
+  });
+}
